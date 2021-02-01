@@ -49,23 +49,3 @@ if __name__ == "__main__":
         else:
             stdin = 0
             print("==== ERROR: Empty stdin input")
-
-    # if len(sys.argv) > 1: 
-    #     stdin = 0
-    #     argument = sys.argv
-    #     del argument[0]
-    #     print("==== INFO: Detected " + str(len(argument)) + " arguments to process")
-    #     # Call functions
-    #     for x in range(len(argument)):
-    #         argument_function(argument[x],stdin)
-    #     print("==== INFO: All task completed")
-    # else:
-    #     if len(sys.argv) <= 1 and not sys.stdin.isatty():
-    #         print("==== INFO: help asystant")
-    #         exit
-    #     else:
-    #         argument = sys.stdin.read()
-    #         stdin = 1
-    #         argument_function(argument,stdin)
-    #         print("==== INFO: All task completed")
-
