@@ -6,7 +6,7 @@ filetext = ""
 
 def search_function(filetext):
     print("==== INFO: Running search engine")
-    match = re.findall(r'((\b.+?\b)(?:\s\2)+)',filetext,re.DOTALL)
+    match = re.findall(r'((\b.+?\b)(?:\s\2)+)',filetext,re.MULTILINE)
     return [(m[1], int((len(m[0]) + 1) / (len(m[1]) + 1))) for m in match]
     textfile.close()
 
